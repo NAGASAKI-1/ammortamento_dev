@@ -7,7 +7,7 @@
     </head>
     <body> 
     <!-- Il form usa il metodo POST che permette di inviare dati alla stessa pagina -->
-        <form method="POST">
+        <form method="POST" action="/index.php">
 
         <label>Inserire l'importo in €</label>
         <input type="number" id="importo" name="importo" required>
@@ -24,9 +24,5 @@
         <button type="submit">Calcola</button>
         </form>
 
-        <?php
-        require ("php.php");
-        echo $test;
-        ?>
     </body>
 </html>
