@@ -1,5 +1,4 @@
-<body>
-    <?php
-        echo "test";
-    ?>
-</body>
+
+<?php
+    $test = "test";        
+?>
