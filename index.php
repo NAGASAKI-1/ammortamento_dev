@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="it">
-    <head>
-        <title>
-            calcolatore piano ammortamento
-        </title>
-    </head>
-    <body> 
-    <!-- Il form usa il metodo POST che permette di inviare dati alla stessa pagina -->
-        <form method="POST" action="/index.php">
+<?php
+    $test = "test";
+    
+    function calcola(float $importo, int $n_rate, float $tasso){
 
-        <label>Inserire l'importo in €</label>
-        <input type="number" id="importo" name="importo" required>
-        <br><br>
-        
-        <label>Inserire Il numero di rate</label>
-        <input type="number" id="rate" name="rate" required>
-        <br><br>
+    $percentuale_tasso = ($tasso / 100) / 12;
 
-        <label>Inserire il tasso di interesse annuo (in %)</label>
-        <input type="number" id="interesse" name="interesse" required>
-        <br><br>
+    $rata = $importo * ($percentuale_tasso / (1 - pow(1 + $percentuale_tasso, - $n_rate)));
 
-        <button type="submit">Calcola</button>
-        </form>
-
-    </body>
-</html>
+    }
+?>
