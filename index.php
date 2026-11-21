@@ -1,4 +1,7 @@
 <?php
+    //debug
+    //echo("TEST");
+    
     $test = "test";
     
     function calcola(float $importo, int $n_rate, float $tasso){
