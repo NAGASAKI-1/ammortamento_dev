@@ -47,8 +47,8 @@
             </tr>
             <?php foreach ($piano as $rata_record): ?>
                 <tr>
-                    <td> <?php echo rata_record["numero rata"] ?> </td>
-                    <td> <?php echo rata_record["rata"] ?> </td>
+                    <td> <?php echo $rata_record["numero rata"] ?> </td>
+                    <td> <?php echo $rata_record["rata"] ?> </td>
                 </tr>
             <?php endforeach ?>
         </table>
