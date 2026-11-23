@@ -2,7 +2,7 @@
 
 # Configuration
 SOURCE_DIR="."
-DEST_DIR="/srv/http"
+DEST_DIR="/var/www/bitlabs.ddns.net/ammortamento/"
 IGNORE_FILE=".devignore"
 
 # Check if destination directory exists

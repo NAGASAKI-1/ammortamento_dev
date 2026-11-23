@@ -3,3 +3,14 @@
     text-align: center;
     color: #da3030;
 }
+
+body {
+    background-color:bisque;
+    font-family: Arial, sans-serif;
+    max-width: 40%;
+    align-items: center;
+    horizontal-align: center;
+    vertical-align: center;
+    margin: 0;
+    padding: 0;
+}
