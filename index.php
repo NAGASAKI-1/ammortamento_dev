@@ -45,14 +45,12 @@
                 <th>Rata</th>
                 <th>Importo</th>
             </tr>
-            <?php 
-                foreach ($piano as $rata_record):
-                    echo "<tr>\n";
-                    echo "\t<td>{$rata_record["numero rata"]}</td>";
-                    echo "\t<td>{$rata_record["rata"]}</td>";
-                    echo "</tr>\n";
-                endforeach;
-            ?>
+            <?php foreach ($piano as $rata_record): ?>
+                <tr>
+                    <td> <?php echo rata_record["numero rata"] ?> </td>
+                    <td> <?php echo rata_record["rata"] ?> </td>
+                </tr>
+            <?php endforeach ?>
         </table>
     </body>
 </html>
