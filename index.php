@@ -1,12 +1,15 @@
 <?php
+    require "./funzioni.php";
     //debug
-    echo("TEST <br>");
+    //echo("TEST <br>");
     
     //variabili
     $capitale = $_POST["importo"];
     $n_rate = $_POST["rate"];
     $tasso_annuo = $_POST["interesse"];
     $tipo_ammortamento = $_POST["tipo"];
+
+    $piano = calcolaItaliano($capitale, $n_rate, $tasso_annuo);
 
     //debug
     /*
@@ -27,6 +30,29 @@
     </head>
 
     <body> 
+        <?php echo $capitale ?>
+        <br>
+        <?php echo $n_rate ?>
+        <br>
+        <?php echo $tasso_annuo ?>
+        <br>
+        <?php echo $tipo_ammortamento ?>
+        <br>
+        <br>
 
+        <table>
+            <tr>
+                <th>Rata</th>
+                <th>Importo</th>
+            </tr>
+            <?php 
+                foreach ($piano as $rata_record):
+                    echo "<tr>\n";
+                    echo "\t<td>{$rata_record["numero rata"]}</td>";
+                    echo "\t<td>{$rata_record["rata"]}</td>";
+                    echo "</tr>\n";
+                endforeach;
+            ?>
+        </table>
     </body>
 </html>
