@@ -1,5 +1,5 @@
-#calculator_panel{
-    margin: auto;
-    text-align: center;
-    color: #da3030;
+body{
+    background-color:#da3030;
+    max-width: 40%;
+    justify-content: center;
 }

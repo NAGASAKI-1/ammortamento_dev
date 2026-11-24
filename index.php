@@ -2,6 +2,10 @@
     //debug
     //echo("TEST");
     
+    $capitale = $_POST["importo"];
+    $n_rate = $_POST["rate"];
+    $percentuale_tasso = $_POST["interesse"]; 
+
     $test = "test";
     
     function calcola(float $capitale, int $n_rate, float $tasso_annuo){
