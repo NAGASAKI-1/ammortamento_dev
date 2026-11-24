@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <base href="/ammortamento/">
+        <!--<base href="/ammortamento/"> -->
+        <!--Ilari: che è roba sopra? ho anche provato a modificarlo e non prendeva il file .css finchè non l'ho commentato-->:
         <meta charset="UTF-8">
         <title>Calcolatore piano di ammortamento</title>
         <link rel="stylesheet" href="style.css">
@@ -10,26 +11,30 @@
     <body> 
     <!-- Il form usa il metodo POST che permette di inviare dati al server-->
     <!-- action esplicita la destinazione dei dati dopo il submit-->
-        <form method="POST" action="index.php">
+        <form method="POST" action="index.php" id="form">
 
+        <div class = "div">
         <label>Inserire l'importo in €</label>
         <input type="number" id="importo" step="any" name="importo" required>
-        <br><br>
-        
+        </div>
+
+        <div class = "div">
         <label>Inserire Il numero di rate</label>
         <input type="number" id="rate" step="any" name="rate" required>
-        <br><br>
+        </div>
 
+        <div class = "div">
         <label>Inserire il tasso di interesse annuo (in %)</label>
         <input type="number" id="interesse" step="any" name="interesse" required>
-        <br><br>
+        </div>
 
+        <div class = "div">
         <label>Inserire il tipo di ammortamento</label>
         <select name="tipo" id="selettore_tipo">
             <option value="francese">Francese</option>
             <option value="italiano">Italiano</option>
         </select> 
-        <br><br>
+        </div>
 
         <button type="submit">Calcola</button>
         </form>

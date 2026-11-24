@@ -1,3 +1,6 @@
+
+/*Ilari: premetto che di sta merda ricordavo 0 sintassi quindi certamente non l'ho fatto del tutto io */
+
 #calculator_panel{
     margin: auto;
     text-align: center;
@@ -7,10 +10,78 @@
 body {
     background-color:bisque;
     font-family: Arial, sans-serif;
-    max-width: 40%;
-    align-items: center;
-    horizontal-align: center;
-    vertical-align: center;
     margin: 0;
-    padding: 0;
+    padding: 24px 24px;;
 }
+
+.div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.divPHP {
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+    padding: 10px 14px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tablePHP {
+    text-align: center;
+    width: 100%;
+    max-width: 750px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tablePHP th {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.tablePHP tr:nth-child(even) td {
+    background-color: #f8fafc;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+#form{
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
