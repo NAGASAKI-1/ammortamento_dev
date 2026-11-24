@@ -11,7 +11,7 @@
     $piano =  [];
 
     if($tipo_ammortamento == "italiano"){
-        $piano = calcolaItaliano($capitale, $n_rate, $tasso_annuo);
+    $piano = calcolaItaliano($capitale, $n_rate, $tasso_annuo);
     }
     else if($tipo_ammortamento == "francese"){
         $piano = calcolaFrancese($capitale, $n_rate, $tasso_annuo);
@@ -55,23 +55,23 @@
 
         <table class = "tablePHP">
             <thead>
-        <tr>
-            <th>Rata</th>
+            <tr>
+                <th>Rata</th>
             <th>Importo rata</th>
             <th>Quota interessi</th>
             <th>Debito residuo</th>
             <th>Quota capitale</th>
-        </tr>
+            </tr>
             </thead>
             <?php foreach ($piano as $rata_record): ?>
                 <tbody>
-                    <tr>
+                <tr>
                         <td><?php echo (int)($rata_record["numero_rata"] ?? 0); ?></td>
                         <td><?php echo number_format((float)($rata_record["rata"] ?? 0), 2, ',', '.'); ?> €</td>
                         <td><?php echo number_format((float)($rata_record["quota_interessi"] ?? 0), 2, ',', '.'); ?> €</td>
                         <td><?php echo number_format((float)($rata_record["debito_rimasto"] ?? 0), 2, ',', '.'); ?> €</td>
                         <td><?php echo number_format((float)($rata_record["quota_capitale"] ?? 0), 2, ',', '.'); ?> €</td>
-                    </tr>
+                </tr>
             <?php endforeach ?>
             </tbody>
             <br>
