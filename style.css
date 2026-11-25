@@ -5,6 +5,7 @@
 }
 
 body {
+    text-align: center;
     background-color:bisque;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -113,6 +114,7 @@ input[type="submit"]:active,
 }
 
 .indietro {
+    text-align: center;
     display: inline-block;
     padding: 10px 16px;
     text-decoration: none;
@@ -122,4 +124,5 @@ input[type="submit"]:active,
     border-radius: 8px;
     font-weight: bold;
     width: auto;
+    
 }

@@ -76,5 +76,6 @@
             </tbody>
             <br>
         </table>
+        <a href="index.html" class="indietro">Torna indietro</a>
     </body>
 </html>
