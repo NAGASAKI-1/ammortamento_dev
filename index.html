@@ -12,32 +12,22 @@
     <!-- action esplicita la destinazione dei dati dopo il submit-->
         <form method="POST" action="index.php" id="form">
 
-        <div class = "div">
+        <div>
         <label>Inserire l'importo in €</label>
-        <input type="number" id="importo" step="any" name="importo" required>
+        <input type="number" min="0" id="importo" step="any" name="importo" required>
         </div>
 
-        <div class = "div">
+        <div>
         <label>Inserire Il numero di rate</label>
-        <input type="number" id="rate" step="any" name="rate" required>
+        <input type="number" min="0" id="rate" step="any" name="rate" required>
         </div>
 
-        <label>Frequenza rate</label>
-        <select name="frequenza_rate" id="selettore_frequenza_rate" >
-            <option value="settimanale">Settimanale</option>
-            <option value="mensile">Mensile</option>
-            <option value="bimestrale">Bimestrale</option>
-            <option value="trimestrale">Trimestrale</option>
-            <option value="semestrale">Semestrale</option>
-        </select> 
-        <br><br>
-
-        <div class = "div">
+        <div>
         <label>Inserire il tasso di interesse annuo (in %)</label>
-        <input type="number" id="interesse" step="any" name="interesse" required>
+        <input type="number" min="0" id="interesse" step="any" name="interesse" required>
         </div> 
 
-        <div class = "div">
+        <div>
         <label>Inserire il tipo di ammortamento</label>
         <select name="tipo" id="selettore_tipo">
             <option value="francese">Francese</option>

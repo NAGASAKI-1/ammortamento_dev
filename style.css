@@ -1,6 +1,3 @@
-
-/*Ilari: premetto che di sta merda ricordavo 0 sintassi quindi certamente non l'ho fatto del tutto io */
-
 #calculator_panel{
     margin: auto;
     text-align: center;
@@ -14,7 +11,7 @@ body {
     padding: 24px 24px;;
 }
 
-.div {
+div {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;

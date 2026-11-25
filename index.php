@@ -57,14 +57,14 @@
             <thead>
             <tr>
                 <th>Rata</th>
-            <th>Importo rata</th>
-            <th>Quota interessi</th>
-            <th>Debito residuo</th>
-            <th>Quota capitale</th>
+                <th>Importo rata</th>
+                <th>Quota interessi</th>
+                <th>Debito residuo</th>
+                <th>Quota capitale</th>
             </tr>
             </thead>
+            <tbody>
             <?php foreach ($piano as $rata_record): ?>
-                <tbody>
                 <tr>
                         <td><?php echo (int)($rata_record["numero_rata"] ?? 0); ?></td>
                         <td><?php echo number_format((float)($rata_record["rata"] ?? 0), 2, ',', '.'); ?> €</td>
