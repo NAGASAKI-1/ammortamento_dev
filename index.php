@@ -1,9 +1,6 @@
 <?php
     require "./funzioni.php";
-    //debug
-    //echo("TEST <br>");
-    
-    //variabili
+
     $capitale = $_POST["importo"];
     $n_rate = $_POST["rate"];
     $tasso_annuo = $_POST["interesse"];
@@ -16,13 +13,6 @@
     else if($tipo_ammortamento == "francese"){
         $piano = calcolaFrancese($capitale, $n_rate, $tasso_annuo);
     }
-    //debug
-    /*
-    echo("$capitale <br>");
-    echo ("$n_rate <br>");
-    echo ("$tasso_annuo <br>");
-    echo ("$tipo_ammortamento <br>");
-    */
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +25,7 @@
 
     <body> 
         <div class ="divPHP">
-        <?php echo number_format((float)($capitale ?? 0), 2, ',', '.'); ?>
+        <?php echo number_format((float)($capitale ?? 0), 2, ',', '.'); ?>€
 <!-- number_format è stato aggiunto come controllo e come formattazione, ?? 0 offre un valore alternativo (0)
  in caso $capitale sia NULL, poi viene formattato con 2 decimali e detto di usare , come separatore di deciali
  e . come separatore di migliaia-->
@@ -63,8 +53,8 @@
             <th>Quota capitale</th>
         </tr>
             </thead>
+            <tbody>
             <?php foreach ($piano as $rata_record): ?>
-                <tbody>
                     <tr>
                         <td><?php echo (int)($rata_record["numero_rata"] ?? 0); ?></td>
                         <td><?php echo number_format((float)($rata_record["rata"] ?? 0), 2, ',', '.'); ?> €</td>
@@ -76,5 +66,6 @@
             </tbody>
             <br>
         </table>
+    <a href="index.html" class="indietro">Torna indietro</a>
     </body>
 </html>

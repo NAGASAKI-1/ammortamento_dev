@@ -45,6 +45,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+
 .tablePHP th {
     background-color: #1e293b;
     color: #ffffff;
@@ -84,3 +85,44 @@ select:focus {
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
+button,
+input[type="submit"],
+.btn-calcola {
+    width: auto;
+    padding: 12px 18px;
+    margin-top: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #da3030;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(218, 48, 48, 0.25);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn-calcola:hover {
+    background-color: #b82222;
+}
+
+button:active,
+input[type="submit"]:active,
+.btn-calcola:active {
+    transform: translateY(1px);
+}
+
+.indietro {
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #da3030;
+    background-color: #ffffff;
+    border: 2px solid #da3030;
+    border-radius: 8px;
+    font-weight: bold;
+    width: auto;
+}
