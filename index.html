@@ -12,30 +12,30 @@
     <!-- action esplicita la destinazione dei dati dopo il submit-->
         <form method="POST" action="index.php" id="form">
 
-        <div>
-        <label>Inserire l'importo in €</label>
-        <input type="number" min="0" id="importo" step="any" name="importo" required>
+        <div class = "div">
+        <label>Inserire l'importo (in €)</label>
+        <input type = "number" id = "importo" min = "0.01" step = "0.01" name = "importo" required>
         </div>
 
         <div>
         <label>Inserire Il numero di rate</label>
-        <input type="number" min="0" id="rate" step="any" name="rate" required>
+        <input type ="number" id ="rate" min = "1" step ="1" name ="rate" required>
         </div>
 
         <div>
         <label>Inserire il tasso di interesse annuo (in %)</label>
-        <input type="number" min="0" id="interesse" step="any" name="interesse" required>
-        </div> 
+        <input type ="number" id ="interesse" min = "0.01" step ="0.01" name ="interesse" required>
+        </div>
 
         <div>
         <label>Inserire il tipo di ammortamento</label>
-        <select name="tipo" id="selettore_tipo">
-            <option value="francese">Francese</option>
-            <option value="italiano">Italiano</option>
+        <select name = "tipo" id = "selettore_tipo">
+            <option value = "francese">Francese</option>
+            <option value = "italiano">Italiano</option>
         </select> 
         </div>
 
-        <button type="submit">Calcola</button>
+        <button type = "submit">Calcola</button>
         </form>
 
     </body>

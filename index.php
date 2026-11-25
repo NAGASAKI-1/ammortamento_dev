@@ -57,10 +57,10 @@
             <thead>
             <tr>
                 <th>Rata</th>
-                <th>Importo rata</th>
-                <th>Quota interessi</th>
-                <th>Debito residuo</th>
-                <th>Quota capitale</th>
+            <th>Importo rata</th>
+            <th>Quota interessi</th>
+            <th>Debito residuo</th>
+            <th>Quota capitale</th>
             </tr>
             </thead>
             <tbody>
